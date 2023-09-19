@@ -1,11 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Los ladronzuelos de bicicletas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200&family=Lobster&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+    <header>
+        <h1>Los ladronzuelos de bicicletas</h1>
+    </header>
+    <section id="container">
+        <form action="">
+            <fieldset>
+                <legend>Registro de robo de bicicleta</legend>
+                <label for="diaHechos">Día</label>
+                <input id="diaHechos" name="diaHechos" type="date"><br>
+                <label for="horaHechos">Hora</label>
+                <input id="horaHechos" name="horaHechos" type="time"><br>
+                <label for="colorBici">Color de la bicicleta</label>
+                <input id="colorBici" name="colorBici" type="color"><br>
+                <label for="rangoPrecio">Rango de precio</label>
+                <input type="range" id="rangoPrecio" name="rangoPrecio" min="500" max="10000" value="1000"
+                    step="500"><br>
+                <label for="tipoBici">Tipo de bicicleta</label>
+                <select name="tipoBici" id="tipoBici">
+                    <optgroup label="Paseo">
+                        <option value="senorial">Señorial</option>
+                        <option value="plebeyos">Anti-plebeyos</option>
+                        <option value="hombro">PorEncimaDelHombro</option>
+                    </optgroup>
+                    <optgroup label="Montaña">
+                        <option value="gamusinos">Gamusinos</option>
+                        <option value="premium">Hueleflores premium</option>
+                        <option value="fango">Fango lover</option>
+                    </optgroup>
+                    <optgroup label="Carreras">
+                        <option value="metro">Metroymedio</option>
+                        <option value="fluor">3 de la tarde. Fluorescente edition</option>
+                        <option value="grupitors">Grupitors</option>
+                    </optgroup>
+                </select><br>
+                <label for="accesoriosBici">Accesorios</label>
+                <select name="accesoriosBici" id="accesoriosBici" multiple size="1">
+                    <option value="ruedines">Ruedines</option>
+                    <option value="pegatinas">Pegatinas</option>
+                    <option value="cestita">Cestita</option>
+                    <option value="bomba">Bomba de aire</option>
+                    <option value="timbre">Timbre</option>
+                    <option value="foco">Foco</option>
+                </select><br>
+                <label for="marcaBici">Marca</label>
+                <select name="marcaBici" id="marcaBici">
+                    <option value="specialized"> specialized </option>
+                    <option value="trek"> trek </option>
+                    <option value="merida"> merida </option>
+                    <option value="scott"> scott </option>
+                    <option value="giant"> giant </option>
+                    <option value="cube"> cube </option>
+                    <option value="lapierre"> lapierre </option>
+                    <option value="orbea"> orbea </option>
+                    <option value="cannondale"> cannondale </option>
+                    <option value="bmc"> bmc </option>
+                    <option value="canyon"> canyon </option>
+                    <option value="look"> look </option>
+                    <option value="protek"> protek </option>
+                    <option value="megamo"> megamo </option>
+                    <option value="pinarello"> pinarello </option>
+                    <option value="bianchi"> bianchi </option>
+                    <option value="bh"> bh </option>
+                    <option value="factor"> factor </option>
+                    <option value="ghost"> ghost </option>
+                    <option value="cervélo"> cervélo </option>
+                    <option value="argon"> argon </option>
+                </select>
+
+
+            </fieldset>
+            <input type="submit" value="Enviar Datos" id="enviar_datos" name="enviar_datos">
+            <input type="reset" value="Limpiar formulario" id="limpiar_datos" name="limpiar_datos">
+        </form>
+    </section>
 </body>
+
 </html>

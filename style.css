@@ -1,0 +1,33 @@
+* {
+    font-family: kanit, sans-serif;
+    font-weight: 300;
+    background-color: antiquewhite;
+}
+
+h1 {
+    font-family: kanit, sans-serif;
+    font-weight: 900;
+}
+
+legend {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+label, input {
+    margin: 15px 5px 15px 5px;
+}
+
+input, select, option {
+    background-color: aliceblue;
+}
+
+input#enviar_datos, input#limpiar_datos {
+    font-weight: 800;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    background-color: darkred;
+    color: white;
+    width: 250px;
+}

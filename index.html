@@ -1,11 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El club viejuner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200&family=Lobster&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+    <header>
+        <h1>El club viejuner - solicitud de admisión</h1>
+    </header>
+    <section id="container">
+        <form action="">
+            <fieldset>
+                <legend>Tú</legend>
+                <label for="nombre">Nombre:</label><br>
+                <input id="nombre" name="nombre" type="text" tabindex="0" required autofocus placeholder="Juan"><br>
+                <label for="apellidos">Apellidos</label><br>
+                <input id="apellidos" name="apellidos" type="text" tabindex="0" required placeholder="Pérez López"><br>
+                <label for="edad">Edad:</label><br>
+                <input id="edad" type="number" tabindex="0" placeholder="99"><br>
+                <label for="sexo">Sexo:</label><br>
+                <input type="radio" name="sexo" id="hombre" tabindex="0" value="hombre">Hombre<br>
+                <input type="radio" name="sexo" id="mujer" tabindex="0" value="mujer">Mujer<br>
+                <label for="viejuno">Me siento viejuno</label>
+                <input type="checkbox" name="viejuno" id="viejuno" tabindex="0"><br>
+                <label for="sobreti">Escribe algo sobre ti:</label><br>
+                <textarea name="sobreti" id="sobreti" cols="30" rows="10" tabindex="0" placeholder="Me encanta cuidar de mis nietos y vigilar las obras del barrio."></textarea><br>
+            </fieldset>
+            <fieldset>
+                <legend>Tus circustancias</legend>
+                <label for="correo">Correo electrónico:</label><br>
+                <input id="correo" name="correo" type="email" tabindex="0" placeholder="juan@perez.com"><br>
+                <label for="telefono">Teléfono:</label><br>
+                <input id="telefono" name="telefono" type="tel" tabindex="0" placeholder="644111222"><br>
+            </fieldset>
+            <input type="submit" value="Enviar Datos" id="enviar_datos" name="enviar_datos">
+            <input type="reset" value="Limpiar formulario" id="limpiar_datos" name="limpiar_datos">
+        </form>
+    </section>
 </body>
+
 </html>
