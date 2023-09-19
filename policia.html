@@ -20,16 +20,16 @@
             <fieldset>
                 <legend>Registro de robo de bicicleta</legend>
                 <label for="diaHechos">Día</label>
-                <input id="diaHechos" name="diaHechos" type="date"><br>
+                <input id="diaHechos" name="diaHechos" type="date" autofocus tabindex="0"><br>
                 <label for="horaHechos">Hora</label>
-                <input id="horaHechos" name="horaHechos" type="time"><br>
+                <input id="horaHechos" name="horaHechos" type="time" tabindex="0"><br>
                 <label for="colorBici">Color de la bicicleta</label>
-                <input id="colorBici" name="colorBici" type="color"><br>
+                <input id="colorBici" name="colorBici" type="color" tabindex="0"><br>
                 <label for="rangoPrecio">Rango de precio</label>
                 <input type="range" id="rangoPrecio" name="rangoPrecio" min="500" max="10000" value="1000"
-                    step="500"><br>
+                    step="500" tabindex="0"><br>
                 <label for="tipoBici">Tipo de bicicleta</label>
-                <select name="tipoBici" id="tipoBici">
+                <select name="tipoBici" id="tipoBici" tabindex="0">
                     <optgroup label="Paseo">
                         <option value="senorial">Señorial</option>
                         <option value="plebeyos">Anti-plebeyos</option>
@@ -47,7 +47,7 @@
                     </optgroup>
                 </select><br>
                 <label for="accesoriosBici">Accesorios</label>
-                <select name="accesoriosBici" id="accesoriosBici" multiple size="1">
+                <select name="accesoriosBici" id="accesoriosBici" multiple size="1" tabindex="0">
                     <option value="ruedines">Ruedines</option>
                     <option value="pegatinas">Pegatinas</option>
                     <option value="cestita">Cestita</option>
@@ -56,7 +56,7 @@
                     <option value="foco">Foco</option>
                 </select><br>
                 <label for="marcaBici">Marca</label>
-                <select name="marcaBici" id="marcaBici">
+                <select name="marcaBici" id="marcaBici" tabindex="0">
                     <option value="specialized"> specialized </option>
                     <option value="trek"> trek </option>
                     <option value="merida"> merida </option>
@@ -82,8 +82,8 @@
 
 
             </fieldset>
-            <input type="submit" value="Enviar Datos" id="enviar_datos" name="enviar_datos">
-            <input type="reset" value="Limpiar formulario" id="limpiar_datos" name="limpiar_datos">
+            <input type="submit" value="Enviar Datos" id="enviar_datos" name="enviar_datos" tabindex="0">
+            <input type="reset" value="Limpiar formulario" id="limpiar_datos" name="limpiar_datos" tabindex="0">
         </form>
     </section>
 </body>
