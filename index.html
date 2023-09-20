@@ -14,9 +14,14 @@
 <body>
     <header>
         <h1>El club viejuner - solicitud de admisión</h1>
+        <nav>
+            <ul>
+                <li><a href="./policia.html">Los Ladronzuelos de Bicicletas</a></li>
+            </ul>
+        </nav>
     </header>
     <section id="container">
-        <form action="">
+        <form action="#contact">
             <fieldset>
                 <legend>Tú</legend>
                 <label for="nombre">Nombre:</label><br>
@@ -38,7 +43,7 @@
                 <label for="correo">Correo electrónico:</label><br>
                 <input id="correo" name="correo" type="email" tabindex="0" placeholder="juan@perez.com"><br>
                 <label for="telefono">Teléfono:</label><br>
-                <input id="telefono" name="telefono" type="tel" tabindex="0" placeholder="644111222"><br>
+                <input id="telefono" name="telefono" type="tel" tabindex="0" placeholder="644111222" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
             </fieldset>
             <input type="submit" value="Enviar Datos" id="enviar_datos" name="enviar_datos">
             <input type="reset" value="Limpiar formulario" id="limpiar_datos" name="limpiar_datos">

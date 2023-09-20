@@ -4,6 +4,10 @@
     background-color: antiquewhite;
 }
 
+body{
+    margin: 30px;
+}
+
 h1 {
     font-family: kanit, sans-serif;
     font-weight: 900;
@@ -14,11 +18,15 @@ legend {
     font-weight: 500;
 }
 
-label, input {
-    margin: 15px 5px 15px 5px;
+fieldset {
+    border-radius: 10px;
 }
 
-input, select, option {
+label, input, select {
+    margin: 15px 5px;
+}
+
+input, select, option, textarea {
     background-color: aliceblue;
 }
 
@@ -27,7 +35,26 @@ input#enviar_datos, input#limpiar_datos {
     font-size: 18px;
     border-radius: 10px;
     border: none;
-    background-color: darkred;
     color: white;
     width: 250px;
+}
+
+input#enviar_datos, input#limpiar_datos {
+    background-color: darkred;
+}
+
+header>nav>ul>li>a {
+    background-color: cadetblue;
+    font-weight: 800;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    width: 350px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+header>nav>ul>li{
+    list-style: none;
 }
